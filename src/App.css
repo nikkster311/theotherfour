@@ -1,0 +1,80 @@
+/* white
+#fbfcff
+
+brown
+#605856
+
+light blue
+#AFD0D6
+
+teal blue
+#1C6E8C
+
+dark blue
+#274156 */
+
+
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+.content-wrap {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: auto;
+}
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+.App {
+  text-align: center;
+  background-color: #AFD0D6;
+}
+
+/*-------------HEADER & FOOTER------------*/
+
+.App-header {
+  color: #fbfcff;
+  background-color: #274156;
+}
+
+footer {
+  background-color: #605856;
+}
+footer a{
+  color: #fbfcff;
+  padding: 10px;
+}
+
+footer a:hover{
+  color: #AFD0D6;
+}
+
+
+/*-------------DIM SCREEN PAGE------------*/
+
+
+.dimScreenFullPage {
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+  animation: fadeInOut 15s linear forwards;
+  /* animation ^^ is called below on keyframes */
+}
+
+@keyframes fadeInOut {
+ 0% { opacity:0; }
+ 7% { opacity:1; }
+ 93% { opacity: 1; }
+ 100% { opacity:0; }
+}
